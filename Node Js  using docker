@@ -1,0 +1,44 @@
+cmdpromot
+1) cd e:
+2) mkdir dockernodejs
+3) cd dockernodejs
+4) app.js
+
+const express = require('express');
+const app = edxpress();
+app.get('/', req, res)=>
+{
+  res.send("Docker Nodejs Example");
+});
+app.listen(3111,()=>
+console.log("Server is running on port 3111");
+);
+
+5) npm init-y
+6) npm i express
+
+open gitbash:-
+
+cd d:
+cd dockernodejs
+ls
+echo "node_modules/">>.gitignore
+git init
+git status
+git  config
+ls
+touch Dockerfile
+vim Dockerfile
+git add .
+git commit -m "Changes done"
+
+open github and create new repository
+
+git remote add origin
+git branch -main
+git push -u origin main
+
+Open Cmdpromt:-
+
+docker built -t dockernodejs <url>
+docker run -d -p 3111:3111 dockernodejs
